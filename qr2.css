@@ -1,0 +1,59 @@
+body
+{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height:100%;
+    box-sizing: border-box;
+}
+form
+{
+    background-color: teal;
+    height:500px;
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    font-size:25px;
+    color: bisque;
+    padding-left:10px;
+}
+output
+{
+    background-color: chartreuse;
+    height:500px;
+    width:500px;
+}
+input[type=url],select
+{
+    width:90%;
+    height: 22px;
+}
+img
+{
+    height:480px;
+    width:480px;
+    padding: 10px;
+}
+button
+{
+    height:35px;
+    width:200px;
+    background-color: deeppink;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
+#save
+{
+    height:35px;
+    width:200px;
+    background-color:limegreen;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+}

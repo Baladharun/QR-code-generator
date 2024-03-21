@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR generator</title>
+    <link rel="stylesheet" href="qr2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" 
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <form class="forms">
+        <div class="multi-line">
+            <label for="url">Enter The website link</label>
+        </div>
+        <div class="multi-line">
+            <input id="url" type="url" placeholder="Enter URL">
+        </div>
+        <label for="size">Enter dimension</label>
+        <select id="size">
+            <option value="100">100 X 100</option>
+            <option value="200">200 X 200</option>
+            <option value="300">300 X 300</option>
+            <option value="400">400 X 400</option>
+        </select>
+        <div>
+            <label for="darkcolor">Darkcolor</label>
+            <input type="color" id="darkcolor">
+        </div>
+        <div>
+            <label for="lightcolor">Lightcolor</label>
+            <input type="color" id="lightcolor">
+        </div>
+        <br>
+        <div>
+            <button type="submit" id="complete">Generate QR code</button>
+            <a id="save" href="#">Save picture</a>
+        </div>
+    </form>
+    <output  id="qrcode">
+        
+    </output>
+    <script src="qr.js"></script>
+</body>
+</html>
